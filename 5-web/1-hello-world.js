@@ -1,6 +1,7 @@
 const http = require('http');
 
 const requestListener = (req, res) => {
+  // req, res are streams
   res.write('Hello World\n');
   res.end();
   // Equivalent to
