@@ -1,7 +1,8 @@
-const { readFile } = require('fs').promises;
+// const { readFile } = require('fs').promises;
+const fs = require('fs').promises;
 
 async function main() {
-  const data = await readFile(__filename);
+  const data = await fs.readFile(__filename);
   console.log('File data is', data);
 }
 
